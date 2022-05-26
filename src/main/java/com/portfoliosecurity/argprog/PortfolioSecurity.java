@@ -19,7 +19,7 @@ public class PortfolioSecurity {
 	return new WebMvcConfigurer() {
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/auth/authenticate").allowedOrigins("http://localhost:4200");
+        registry.addMapping("/auth/authenticate").allowedOrigins("*");
     }
     };
     }
