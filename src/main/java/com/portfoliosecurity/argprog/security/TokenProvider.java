@@ -28,6 +28,9 @@ public class TokenProvider {
 
     @Value("${app.jwt.secret}")
     private String jwtSecret;
+    
+    @Value("${app.jwt.expiration.minutes}")
+    private Long jwtExpirationMinutes;
 
     
     public String generate(Authentication authentication) {
@@ -43,7 +46,7 @@ public class TokenProvider {
         return Jwts.builder()
                 .setHeaderParam("typ", TOKEN_TYPE)
                 .signWith(Keys.hmacShaKeyFor(signingKey), SignatureAlgorithm.HS512)
-                .setExpiration(Date.from(ZonedDateTime.now().plusMinutes(525600).toInstant()))
+                .setExpiration(Date.from(ZonedDateTime.now().plusMinutes(jwtExpirationMinutes).toInstant()))
                 .setIssuedAt(Date.from(ZonedDateTime.now().toInstant()))
                 .setId(UUID.randomUUID().toString())
                 .setIssuer(TOKEN_ISSUER)
