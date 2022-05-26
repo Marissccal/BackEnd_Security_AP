@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 import static com.portfoliosecurity.argprog.config.SwaggerConfig.BEARER_KEY_SECURITY_SCHEME;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"*"})
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/users")

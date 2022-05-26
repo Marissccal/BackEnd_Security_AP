@@ -24,7 +24,7 @@ import javax.validation.Valid;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"*"})
 //@CrossOrigin(origins= {"*"}, maxAge = 4800, allowCredentials = "false")
 @RequiredArgsConstructor
 @RestController
