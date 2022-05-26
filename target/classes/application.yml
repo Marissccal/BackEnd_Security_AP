@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: portfolio-security
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://localhost:3306/portfolio_jpa?useSSL=false&serveTimezone=UTC
+    username: root
+    password: 
+
+app:
+  jwt:
+    # Signing key for HS512 algorithm
+    # In http://www.allkeysgenerator.com/ you can generate all kinds of keys
+    secret: )J@NcRfUjXn2r5u8x!A%D*G-KaPdSgVkYp3s6v9y$B?E(H+MbQeThWmZq4t7w!z%
+    expiration:
+      minutes: 10
+  cors:
+    allowed-origins: http://localhost:4200
