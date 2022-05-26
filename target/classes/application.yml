@@ -17,4 +17,4 @@ app:
     expiration:
       minutes: 1000000
   cors:
-    allowed-origins: {"https://portfolio-9d1e3.web.app", "http://localhost:4200"}
+    allowed-origins: https://portfolio-9d1e3.web.app
