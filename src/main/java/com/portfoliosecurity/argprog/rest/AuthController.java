@@ -24,7 +24,7 @@ import javax.validation.Valid;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 
-@CrossOrigin(origins = {"*"})
+@CrossOrigin(origins = {"https://portfolio-9d1e3.web.app/"})
 //@CrossOrigin(origins= {"*"}, maxAge = 4800, allowCredentials = "false")
 @RequiredArgsConstructor
 @RestController
