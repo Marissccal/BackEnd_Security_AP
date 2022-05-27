@@ -13,8 +13,8 @@ app:
   jwt:
     # Signing key for HS512 algorithm
     # In http://www.allkeysgenerator.com/ you can generate all kinds of keys
-    secret: z$C&F)H@McQfTjWnZr4u7x!A%D*G-KaNdRgUkXp2s5v8y/B?E(H+MbQeShVmYq3t
+    secret: UkXp2s5v8x/A?D(G+KbPeShVmYq3t6w9z$B&E)H@McQfTjWnZr4u7x!A%D*F-JaN
     expiration:
-      minutes: 999
+      minutes: 525600
   cors:
     allowed-origins: https://portfolio-9d1e3.firebaseapp.com
