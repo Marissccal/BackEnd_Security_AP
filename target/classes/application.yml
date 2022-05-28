@@ -11,8 +11,8 @@ spring:
 
 app:
   jwt:
-    # Signing key for HS512 algorithm
-    # In http://www.allkeysgenerator.com/ you can generate all kinds of keys
+    # Clave de firma para el algoritmo HS512
+    # En http://www.allkeysgenerator.com/ se pueden generar todo tipo de claves
     secret: UkXp2s5v8x/A?D(G+KbPeShVmYq3t6w9z$B&E)H@McQfTjWnZr4u7x!A%D*F-JaN
     expiration:
       minutes: 525600
